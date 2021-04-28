@@ -24,19 +24,22 @@
   display: inline-flex;
   flex-direction: column;
   text-align: center;
-  padding: 6.5px;
+  padding: 0.1px;
   background: #00345b 0% 0% no-repeat padding-box;
 }
 
 .menu-bar-container ul li {
   height: 28px;
   width: 50px;
-  margin-top: 10px;
-  padding-right: 40px;
+  margin-top: 13px;
+  padding-right: 50px;
+}
+.menu-bar-container ul li div embed {
+  padding-left: 5px;
 }
 
 .menu-bar-container ul li:hover {
-  background: coral;
+  background: #3a5898;
 }
 
 .just-hover {
