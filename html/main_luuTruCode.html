@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,13 +23,11 @@
     <!-- dev custom E-->
   </head>
   <body>
-    <div class="container-fluid main-contain">
-    <!-- MENU LEFT START -->
-      <div class="menu-bar-container">
-        <div class="menu-icon">
-          <ul >
+    <div class="container-fluid">
+      <div class="row menu-bar-container">
+        <div class="menu-bar">
+          <ul>
             <li>
-             
               <div class="span-icon-menu">
                 <embed src="../asset/happy.svg" />
               </div>
@@ -47,20 +47,79 @@
           </ul>
         </div>
 
-        <div class="menu-detail-in-icon">
-          asd
-
-        </div> 
-
-    </div>
-    <!-- MENU LEFT END -->
-
-    <div class="container-fluid main-contain-page">
-      <div class="row">
-        <div class="col-6">123</div>
-        <div class="col-6">456</div>
+        <div class="row ">123
       </div>
     </div>
     <!-- container-fluid -->
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar-container {
+  background: deepskyblue;
+  text-align: left;
+  height: 1126px;
+  width: 262px;
+}
+
+.menu-bar ul {
+  height: 1126px;
+  width: 40px;
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: column;
+
+  padding: 6.5px;
+  background: #00345b 0% 0% no-repeat padding-box;
+}
+
+.menu-bar ul li {
+  width: 120px;
+}
+
+.menu-bar ul li {
+  height: 40px;
+}
+
+.sub-menu-1 {
+  display: block;
+  padding-left: 50px;
+}
+.span-icon-menu {
+  width: 28px;
+  height: 28px;
+}
+.span-icon-menu:hover {
+  background: crimson;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+}
