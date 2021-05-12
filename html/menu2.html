@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Tutorial | Caler Edwards</title>
+    <link rel="stylesheet" type="text/css" href="../asset/css/ForProgrammer/menu2.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">The Step</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <span onclick="openNav()" class="open" id="open">&#9776</span>
+        <h1>Take the first step</h1>
+        <a href="javascript:void(0)" class="btn_one">Start</a>
+       
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("open").style.display = "none";
+            document.getElementById("nav").style.width = "100%";
+        }
+        function closeNav() {
+            
+            document.getElementById("nav").style.width = "0";
+            document.getElementById("open").style.display = "block";
+        }
+    </script>
+</body>
+</html>

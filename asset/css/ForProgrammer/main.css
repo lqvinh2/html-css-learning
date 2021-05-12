@@ -105,4 +105,27 @@
             transform: translateY(30%);
   }
 }
+
+.grid-item {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+
+.flower {
+  background: teal;
+}
+
+.bird {
+  background: salmon;
+}
+
+.fruit {
+  background: tomato;
+}
+
+.tbody {
+  overflow: hidden;
+}
 /*# sourceMappingURL=main.css.map */

@@ -67,3 +67,28 @@
     transform:translateY(30%);
   }
 }
+
+
+/////////////// isotope START
+
+.grid-item {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+}
+.flower {
+  background: teal;
+}
+.bird {
+  background: salmon;
+}
+.fruit {
+  background: tomato;
+}
+
+.tbody{
+  overflow: hidden;
+}
+
+/////////////// isotope END
