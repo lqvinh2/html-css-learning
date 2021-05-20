@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a3333;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-reflect: below 1px
+    linear-gradient(rgba(21, 202, 91, 0.067), rgba(26, 21, 21, 0.267));
+}
+
+.container .loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #203a3a;
+  border-radius: 50%;
+  -webkit-animation: animateRotate 1s linear infinite;
+  animation: animateRotate 1s linear infinite;
+}
+
+.container .loader::before {
+  content: "";
+  position: absolute;
+  background-color: #172525;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(#1e4624)
+  );
+  background: linear-gradient(to top, transparent, #1e4624);
+  background-size: 100px 180px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+
+.container .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: #71b9b9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-box-shadow: 0 0 10px #00e686, 0 0 20px #00e686, 0 0 30px #00e686,
+    0 0 40px #00e686, 0 0 50px #00e686, 0 0 60px #00e686, 0 0 70px #00e686,
+    0 0 80px #00e686, 0 0 90px #00e686, 0 0 100px #00e686;
+  box-shadow: 0 0 10px #00e686, 0 0 20px #00e686, 0 0 30px #00e686,
+    0 0 40px #00e686, 0 0 50px #00e686, 0 0 60px #00e686, 0 0 70px #00e686,
+    0 0 80px #00e686, 0 0 90px #00e686, 0 0 100px #00e686;
+}
+
+.container .loader span {
+  position: absolute;
+  background: #203a3a;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes animateRotate {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animateRotate {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=effect1.css.map */
