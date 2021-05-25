@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XXXXXXXXX</title>
+    <link rel="icon" href="data:," />
+    <script src="../asset/js/jQuery_3.6.0.js"></script>
+    <script src="../asset/js/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../asset/css/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- <link rel="stylesheet/less" type="text/css" href="../css/main.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@3.13"></script> -->
+
+    <!-- AOS Animate Div / Element On Scroll | JavaScript AOS Library START-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- AOS Animate Div / Element On Scroll | JavaScript AOS Library END-->
+
+    <!-- https://animate.style/ START -->
+    <link rel="stylesheet" href="../asset/js/animate.style/animate.min.css" />
+    <!-- https://animate.style/ END -->
+
+    <!-- isotope START -->
+    <script src="../asset/js/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- isotope END -->
+
+    <!-- https://www.embla-carousel.com/examples/navigation/ -->
+    <script src="../asset/js/embla-carousel.umd.js"></script>
+    <script src="../asset/js/js-image-zoom.js"></script>
+
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
+    <!-- dev custom S-->
+    <link rel="stylesheet" href="../asset/css/ForProgrammer/main.css" />
+    <script src="../asset/js/ForProgrammer/index.js"></script>
+    <!-- dev custom E-->
+  </head>
+  <body class="testzoomimg">
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="
+            col-12
+            d-flex
+            flex-row
+            justify-content-center
+            align-items-md-center
+          "
+        >
+          <div class="embla">
+            <div class="embla__container">
+              <div class="embla__slide">
+                <span class="label_number_mark">Slide 1</span>
+              </div>
+              <div class="embla__slide">
+                <span class="label_number_mark">Slide 2</span>
+              </div>
+              <div class="embla__slide">
+                <span class="label_number_mark">Slide 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 list-thumb">
+          <div class="embla__slide_thumbnail">1</div>
+          <div class="embla__slide_thumbnail">2</div>
+          <div class="embla__slide_thumbnail">3</div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <!-- Embla -->
+
+    <div class="embla_Drag_holder">
+      <div class="embla_Drag">
+        <div class="embla__viewport">
+          <div class="embla__container">
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+            <div class="embla__slide">
+              <div class="embla__slide__inner">
+                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+     
+      </div>
+    </div>
+
+      <!-- https://igorlino.github.io/elevatezoom-plus/examples.htm -->
+      <div id="container_zoom">
+    
+      </div>
+
+      <img id="zoom_01"  src="../asset/img/server-room-1.jpg">
+       
+    </div>
+
+    </div>
+
+    <script type="text/javascript">
+      $(function () {
+        var emblaNode = document.querySelector(".embla");
+        var options = {
+          loop: true,
+          dragFree: true,
+          speed: 15,
+          containScroll: "123",
+        };
+
+        var embla = EmblaCarousel(emblaNode, options);
+
+        $(".embla__slide_thumbnail").click(function (e) {
+          embla.scrollTo(parseInt($(this).text()) - 1);
+        });
+        $("#zoom_01").ezPlus(
+                {
+                   zoomType: 'window',
+                   zoomWindowWidth: 200,
+                   zoomWindowHeight: 500,
+                   easing: true,
+                    cursor: 'crosshair',
+                    // zoomWindowFadeIn: 200,
+                    // zoomWindowFadeOut: 200,
+                    // lensFadeIn: 200,
+                    // lensFadeOut: 200
+                }
+        );
+
+     
+
+
+        const wrap = document.querySelector(".embla_Drag");
+        const viewPort = wrap.querySelector(".embla__viewport");
+        const prevBtn = wrap.querySelector(".embla__button--prev");
+        const nextBtn = wrap.querySelector(".embla__button--next");
+        const embla2 = EmblaCarousel(viewPort, {
+          dragFree: true,
+          containScroll: "trimSnaps"
+        });
+      });
+    </script>
+  </body>
+</html>
