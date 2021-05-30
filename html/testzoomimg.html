@@ -36,7 +36,10 @@
     <script src="../asset/js/embla-carousel.umd.js"></script>
     <script src="../asset/js/js-image-zoom.js"></script>
 
-    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"
+    ></script>
 
     <!-- dev custom S-->
     <link rel="stylesheet" href="../asset/css/ForProgrammer/main.css" />
@@ -78,86 +81,101 @@
         </div>
       </div>
 
+      <!-- Embla -->
 
-
-
-
-
-
-
-
-    <!-- Embla -->
-
-    <div class="embla_Drag_holder">
-      <div class="embla_Drag">
-        <div class="embla__viewport">
-          <div class="embla__container">
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+      <div class="embla_Drag_holder">
+        <div class="embla_Drag">
+          <div class="embla__viewport">
+            <div class="embla__container">
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="embla__slide">
-              <div class="embla__slide__inner">
-                <img class="embla__slide__img" src="../asset/img/server-room-1.jpg" />
+              <div class="embla__slide">
+                <div class="embla__slide__inner">
+                  <img
+                    class="embla__slide__img"
+                    src="../asset/img/server-room-1.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-  
-     
       </div>
-    </div>
 
       <!-- https://igorlino.github.io/elevatezoom-plus/examples.htm -->
-      <div id="container_zoom">
-    
-      </div>
+      <div id="container_zoom"></div>
 
-      <img id="zoom_01"  src="../asset/img/server-room-1.jpg">
-       
-    </div>
-
+      <img id="zoom_01" src="../asset/img/server-room-1.jpg" />
     </div>
 
     <script type="text/javascript">
@@ -167,7 +185,6 @@
           loop: true,
           dragFree: true,
           speed: 15,
-          containScroll: "123",
         };
 
         var embla = EmblaCarousel(emblaNode, options);
@@ -175,22 +192,17 @@
         $(".embla__slide_thumbnail").click(function (e) {
           embla.scrollTo(parseInt($(this).text()) - 1);
         });
-        $("#zoom_01").ezPlus(
-                {
-                   zoomType: 'window',
-                   zoomWindowWidth: 200,
-                   zoomWindowHeight: 500,
-                   easing: true,
-                    cursor: 'crosshair',
-                    // zoomWindowFadeIn: 200,
-                    // zoomWindowFadeOut: 200,
-                    // lensFadeIn: 200,
-                    // lensFadeOut: 200
-                }
-        );
-
-     
-
+        $("#zoom_01").ezPlus({
+          zoomType: "window",
+          zoomWindowWidth: 200,
+          zoomWindowHeight: 500,
+          easing: true,
+          cursor: "crosshair",
+          // zoomWindowFadeIn: 200,
+          // zoomWindowFadeOut: 200,
+          // lensFadeIn: 200,
+          // lensFadeOut: 200
+        });
 
         const wrap = document.querySelector(".embla_Drag");
         const viewPort = wrap.querySelector(".embla__viewport");
@@ -198,7 +210,7 @@
         const nextBtn = wrap.querySelector(".embla__button--next");
         const embla2 = EmblaCarousel(viewPort, {
           dragFree: true,
-          containScroll: "trimSnaps"
+          containScroll: "trimSnaps",
         });
       });
     </script>
