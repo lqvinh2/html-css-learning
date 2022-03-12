@@ -27,8 +27,8 @@ body {
 }
 
 .menu {
+  padding: 10px 0;
   background-color: #729e9e;
-  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +40,10 @@ body {
           justify-content: center;
 }
 
+.menu > .ItemSub:first-child {
+  border-bottom: 1px solid black;
+}
+
 .menu .MenuHolder {
   background-color: #90e431;
   display: -webkit-box;
@@ -48,11 +52,16 @@ body {
 }
 
 .menu .MenuHolder .SubMenuHolder {
-  display: block;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 100%;
   left: 0px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .menu .MenuHolder .SubMenuHolder:last-child {
@@ -62,6 +71,11 @@ body {
 .menu .MenuHolder .MenuItem {
   position: relative;
   padding: 10px;
+  transition: all .2s;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
 }
 
 .menu .MenuHolder .MenuItem:hover {
@@ -69,7 +83,8 @@ body {
 }
 
 .menu .MenuHolder .MenuItem:hover > .SubMenuHolder {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu .ItemSub {
@@ -80,9 +95,16 @@ body {
   position: relative;
   width: 200px;
   height: 50px;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 .menu .ItemSub .SubMenuHolder {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: -1px;
   left: 100%;
@@ -97,13 +119,8 @@ body {
 }
 
 .menu .ItemSub:hover > .SubMenuHolder {
-  display: block;
-}
-
-.HasSubJustTest {
-  background-color: #cf8585;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  visibility: visible;
+  opacity: 1;
 }
 
 .ItemTest {
