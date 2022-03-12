@@ -1,0 +1,44 @@
+.SelectBox {
+  cursor: pointer;
+  position: relative;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FBFBFD;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -web-kit-appearance: none;
+  outline: none;
+  border-radius: 16px;
+  border: 1px solid #FF9362;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #FF9362;
+  padding: 10px;
+}
+
+.SelectBox:checked {
+  background: #FF9362;
+}
+
+.SelectBox:before {
+  display: contents;
+  position: absolute;
+  content: '1234';
+  color: #FF9362;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.SelectBox:checked::before {
+  color: white;
+}
+/*# sourceMappingURL=modal.css.map */

@@ -1,0 +1,114 @@
+.af_1 {
+  background-color: #2112af;
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #5e4a4a;
+  padding: 20px 60px;
+  margin-bottom: 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+}
+
+a:hover {
+  background-color: var(--clr);
+  -webkit-box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr), 0 0 100px var(--clr);
+          box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr), 0 0 100px var(--clr);
+}
+
+a::before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  width: 900px;
+  height: 30px;
+  background-color: var(--clr);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation-delay: calc(0.33s * 2);
+          animation-delay: calc(0.33s * 2);
+  -webkit-animation: animatX 2s linear infinite;
+          animation: animatX 2s linear infinite;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+@-webkit-keyframes animatX {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animatX {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background: #4b4452;
+}
+
+a:hover::after {
+  width: 100%;
+  background: var(--clr);
+}
+
+a span {
+  z-index: 2;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  opacity: 0.3;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+a:hover span {
+  opacity: 1;
+}
+/*# sourceMappingURL=style1.css.map */

@@ -1,0 +1,120 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.wrapperBody {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerBody {
+  padding: 3px 5px 0px 5px;
+  width: 100%;
+}
+
+.menu {
+  background-color: #729e9e;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .MenuHolder {
+  background-color: #90e431;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .MenuHolder .SubMenuHolder {
+  display: block;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+
+.menu .MenuHolder .SubMenuHolder:last-child {
+  border-bottom: 1px solid black;
+}
+
+.menu .MenuHolder .MenuItem {
+  position: relative;
+  padding: 10px;
+}
+
+.menu .MenuHolder .MenuItem:hover {
+  background-color: red;
+}
+
+.menu .MenuHolder .MenuItem:hover > .SubMenuHolder {
+  display: block;
+}
+
+.menu .ItemSub {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px 0;
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.menu .ItemSub .SubMenuHolder {
+  position: absolute;
+  top: -1px;
+  left: 100%;
+}
+
+.menu .ItemSub .SubMenuHolder:last-child {
+  border-bottom: 1px solid black;
+}
+
+.menu .ItemSub:hover {
+  background-color: #75ac2d;
+}
+
+.menu .ItemSub:hover > .SubMenuHolder {
+  display: block;
+}
+
+.HasSubJustTest {
+  background-color: #cf8585;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ItemTest {
+  border: 3px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+}
+
+.ItemTest:hover {
+  background-color: #7b84da;
+}
+/*# sourceMappingURL=menu4sub.css.map */

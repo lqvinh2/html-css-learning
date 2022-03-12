@@ -1,0 +1,34 @@
+.SelectBox {
+  cursor: pointer;
+  position: relative;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FBFBFD;
+  appearance: none;
+  -web-kit-appearance: none;
+  outline: none;
+  border-radius: 16px;
+  border: 1px solid #FF9362;
+  transition: .3s;
+  color: #FF9362;
+  padding: 10px;
+
+  &:checked {
+    background: #FF9362;
+  }
+
+  &:before {
+    display: contents;
+    position: absolute;
+    content: '1234';
+    color: #FF9362;
+   -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  &:checked::before{
+   color: white;
+  }
+}

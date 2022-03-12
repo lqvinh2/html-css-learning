@@ -1,0 +1,107 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.wrapperBody {
+    width: 100vw;
+    display: flex;
+}
+
+.containerBody {
+    padding: 3px 5px 0px 5px;
+    width: 100%;
+}
+
+.menu {
+    background-color: rgb(114, 158, 158);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .MenuHolder {
+        background-color: rgb(144, 228, 49);
+        display: flex;
+        .SubMenuHolder {
+         
+           display: block;
+              display: none;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            &:last-child {
+                border-bottom: 1px solid black;
+            }
+        }
+
+        .MenuItem {
+         
+            position: relative;
+            padding: 10px;
+            &:hover {
+                background-color: red;
+            }
+            
+            &:hover > .SubMenuHolder {
+                display: block;
+            }
+        }
+    }
+    .ItemSub {
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding: 10px 0;
+        position: relative;
+        width: 200px;
+        height: 50px;
+
+        .SubMenuHolder {
+            position: absolute;
+            top: -1px;
+            left: 100%;
+            &:last-child {
+                border-bottom: 1px solid black;
+            }
+        }
+        &:hover {
+            background-color: rgb(117, 172, 45);
+        }
+        &:hover > .SubMenuHolder {
+            display: block;
+        }
+    }
+} // menu
+
+
+.HasSubJustTest {
+    background-color: rgb(207, 133, 133);
+    box-sizing: border-box;
+
+}
+
+
+.ItemTest {
+    border: 3px solid black;
+    box-sizing: border-box;
+   
+    width: 200px;
+    height: 50px;
+
+    &:hover {
+        background-color: rgb(123, 132, 218);
+    }
+}
