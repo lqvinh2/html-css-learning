@@ -26,20 +26,18 @@ body {
 }
 
 .menu {
-    padding: 10px 0;
-    background-color: rgb(114, 158, 158);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    >.ItemSub:first-child {
-        border-bottom: 1px solid black;
-    }
+    // padding: 10px 0;
+    // background-color: rgb(114, 158, 158);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
     .MenuHolder {
         background-color: rgb(144, 228, 49);
         display: flex;
+
         .SubMenuHolder {
+            z-index: 2;
             visibility: hidden;
             opacity: 0;
             position: absolute;
@@ -65,6 +63,7 @@ body {
             
             &:hover > .SubMenuHolder {
                // display: block;
+                z-index: 4;
                 visibility: visible;
                 opacity: 1;
             }
@@ -76,7 +75,12 @@ body {
         }
     }
 
+    >.ItemSub:first-child {
+        border-bottom: 1px solid black;
+    }
+
     .ItemSub {
+        z-index: 2;
         border-top: 1px solid black;
         border-left: 1px solid black;
         border-right: 1px solid black;
@@ -102,9 +106,11 @@ body {
         }
         &:hover {
             background-color: rgb(117, 172, 45);
+            
         }
         &:hover > .SubMenuHolder {
             //display: block;
+            z-index: 4;
             visibility: visible;
             opacity: 1;
         }

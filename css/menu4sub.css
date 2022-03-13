@@ -26,24 +26,6 @@ body {
   width: 100%;
 }
 
-.menu {
-  padding: 10px 0;
-  background-color: #729e9e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu > .ItemSub:first-child {
-  border-bottom: 1px solid black;
-}
-
 .menu .MenuHolder {
   background-color: #90e431;
   display: -webkit-box;
@@ -52,6 +34,7 @@ body {
 }
 
 .menu .MenuHolder .SubMenuHolder {
+  z-index: 2;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -83,11 +66,17 @@ body {
 }
 
 .menu .MenuHolder .MenuItem:hover > .SubMenuHolder {
+  z-index: 4;
   visibility: visible;
   opacity: 1;
 }
 
+.menu > .ItemSub:first-child {
+  border-bottom: 1px solid black;
+}
+
 .menu .ItemSub {
+  z-index: 2;
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -119,6 +108,7 @@ body {
 }
 
 .menu .ItemSub:hover > .SubMenuHolder {
+  z-index: 4;
   visibility: visible;
   opacity: 1;
 }
