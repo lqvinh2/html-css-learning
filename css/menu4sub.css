@@ -1,10 +1,8 @@
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -16,8 +14,6 @@ body {
 
 .wrapperBody {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -27,12 +23,9 @@ body {
 }
 
 .menu .MenuHolder {
-  background-color: #90e431;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(144, 228, 49);
   display: flex;
 }
-
 .menu .MenuHolder .SubMenuHolder {
   z-index: 2;
   visibility: hidden;
@@ -46,35 +39,29 @@ body {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
-
 .menu .MenuHolder .SubMenuHolder:last-child {
   border-bottom: 1px solid black;
 }
-
 .menu .MenuHolder .MenuItem {
   position: relative;
   padding: 10px;
-  transition: all .2s;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
-
 .menu .MenuHolder .MenuItem:hover {
   background-color: red;
 }
-
 .menu .MenuHolder .MenuItem:hover > .SubMenuHolder {
   z-index: 4;
   visibility: visible;
   opacity: 1;
 }
-
 .menu > .ItemSub:first-child {
   border-bottom: 1px solid black;
 }
-
 .menu .ItemSub {
   z-index: 2;
   border-top: 1px solid black;
@@ -90,7 +77,6 @@ body {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
 }
-
 .menu .ItemSub .SubMenuHolder {
   visibility: hidden;
   opacity: 0;
@@ -98,15 +84,12 @@ body {
   top: -1px;
   left: 100%;
 }
-
 .menu .ItemSub .SubMenuHolder:last-child {
   border-bottom: 1px solid black;
 }
-
 .menu .ItemSub:hover {
-  background-color: #75ac2d;
+  background-color: rgb(117, 172, 45);
 }
-
 .menu .ItemSub:hover > .SubMenuHolder {
   z-index: 4;
   visibility: visible;
@@ -115,13 +98,10 @@ body {
 
 .ItemTest {
   border: 3px solid black;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 200px;
   height: 50px;
 }
-
 .ItemTest:hover {
-  background-color: #7b84da;
-}
-/*# sourceMappingURL=menu4sub.css.map */
+  background-color: rgb(123, 132, 218);
+}/*# sourceMappingURL=menu4sub.css.map */

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,UAAU;CAC/B",
-    "sources": [
-        "../asset/css/ForProgrammer/testHover.scss"
-    ],
-    "names": [],
-    "file": "testHover.css"
-}
+{"version":3,"sources":["../asset/css/ForProgrammer/testHover.scss","testHover.css"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,YAAA;EACA,4BAAA;ACCJ","file":"testHover.css"}
