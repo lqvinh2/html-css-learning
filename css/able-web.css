@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: darkgrey;
+}
+
+.body-container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(115, 30, 30);
+}
+
+.input-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle-percent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-percent .progress-cell {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(55, 127, 213);
+  border-radius: 50%;
+  background-image: conic-gradient(#0079F2 180deg, #D1E4F6 0deg);
+}
+.circle-percent .progress-cell .progress-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+.circle-percent .progress-cell:before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.input-text-container {
+  color: wheat;
+}
+
+.input-text-demo .input-number::-webkit-inner-spin-button,
+.input-text-demo .input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-text-demo .input-number {
+  outline: none;
+  text-align: right;
+  color: #333;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  height: 59px !important;
+  padding-right: 15px;
+}/*# sourceMappingURL=able-web.css.map */

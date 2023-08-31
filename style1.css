@@ -1,0 +1,78 @@
+.af_1 {
+  background-color: rgb(33, 18, 175);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(94, 74, 74);
+  padding: 20px 60px;
+  margin-bottom: 50px;
+  transition: 1s;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.2666666667));
+}
+
+a:hover {
+  background-color: var(--clr);
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr), 0 0 100px var(--clr);
+}
+
+a::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  width: 900px;
+  height: 30px;
+  background-color: var(--clr);
+  transition: 1s;
+  animation-delay: 0.66s;
+  animation: animatX 2s linear infinite;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+@keyframes animatX {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+a::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: rgb(75, 68, 82);
+}
+
+a:hover::after {
+  width: 100%;
+  background: var(--clr);
+}
+
+a span {
+  z-index: 2;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  opacity: 0.3;
+  color: #fff;
+  transition: 1s;
+}
+
+a:hover span {
+  opacity: 1;
+}/*# sourceMappingURL=style1.css.map */

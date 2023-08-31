@@ -36,13 +36,13 @@ const f1 = async () => {
 
   // FOR TEST START
   ////// insert new
-  // let flag = insert(db[TAB_NAME_PRODUCT], {
-  //   name: "1",
-  //   seller: `2`,
-  //   price: `3`,
-  //   shoeSize: 41,
-  //   time: `${new Date()}`
-  // });
+  let flag = insert(db[TAB_NAME_PRODUCT], {
+    name: "1",
+    seller: `2`,
+    price: `3`,
+    shoeSize: 41,
+    time: `${new Date()}`
+  });
 
   ////// update
   // const updatedRecord = {

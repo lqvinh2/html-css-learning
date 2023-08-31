@@ -1,0 +1,72 @@
+@import "./common";
+
+$c-circle-out-line:#D1E4F6;
+$c-circle-line-percent :#0079F2;
+$width-circle: 300px;
+$width-line-percent: 70px;
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  @include d-center-column;
+  background-color: darkgrey;
+}
+.body-container {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(115, 30, 30);
+}
+
+.input-text-container {
+  @include d-center-column;
+}
+.circle-percent {
+  position: relative;
+  @include d-center-row;
+  .progress-cell {
+    position: relative;
+    @include d-center-row;
+    width: $width-circle;
+    height: $width-circle;
+    background-color: rgb(55, 127, 213);
+    border-radius: 50%;
+    background-image: conic-gradient($c-circle-line-percent 180deg, $c-circle-out-line 0deg);
+    .progress-text-container {
+      @include d-center-column;
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: $width-circle - $width-line-percent;
+      height: $width-circle - $width-line-percent;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+}
+
+.input-text-container {
+  color: wheat;
+}
+
+.input-text-demo {
+  .input-number::-webkit-inner-spin-button,
+  .input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .input-number {
+    outline: none;
+    text-align: right;
+    color: #333;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 59px !important;
+    padding-right: 15px;
+  }
+}
